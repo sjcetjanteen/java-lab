@@ -1,5 +1,9 @@
 package complex;
 import java.util.Scanner;
+/**
+ *
+ * @author sjcet
+ */
 public class Complex {
 
     double real;
@@ -11,8 +15,18 @@ public class Complex {
     }
 
     public static void main(String[] args) {
-        Complex n1 = new Complex(2.3, 4.5),
-                n2 = new Complex(3.4, 5.0),
+        float b, c ,d, e;
+        Scanner a=new Scanner(System.in);
+        System.out.println("enter the real number");
+        b=a.nextInt();
+        System.out.println("enter the imaginary number");
+        c=a.nextInt();
+        System.out.println("enter the real number");
+        d=a.nextInt();
+        System.out.println("enter the imaginary number");
+        e=a.nextInt();
+        Complex n1 = new Complex(b, c),
+                n2 = new Complex(d, e),
                 temp;
 
         temp = add(n1, n2);
